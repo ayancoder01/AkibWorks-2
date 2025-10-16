@@ -26,24 +26,26 @@ export default function Header() {
                 </svg>
               )}
             </button>
-            <button aria-label="Open Menu" className="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-300 dark:border-gray-600 text-slate-700 dark:text-gray-300" onClick={() => setOpen(v=>!v)}>
+            <button aria-label="Open Menu" className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-300 dark:border-gray-600 text-slate-700 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors" onClick={() => setOpen(v=>!v)}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
             </button>
-            <nav className="hidden sm:flex items-center gap-6 text-slate-700 dark:text-gray-300">
+            <nav className="hidden lg:flex items-center gap-6 text-slate-700 dark:text-gray-300">
               <a href="#about" className="hover:text-slate-900 dark:hover:text-white font-medium transition-colors">About</a>
-              <a href="#portfolio" className="hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Work</a>
               <a href="#services" className="hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Services</a>
+              <a href="#portfolio" className="hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Work</a>
+              <a href="#testimonials" className="hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Reviews</a>
               <a href="#contact" className="inline-flex items-center justify-center rounded-md bg-primary text-white px-6 py-2 font-semibold hover:bg-primary-dark transition-colors">Get Started</a>
             </nav>
           </div>
         </div>
         {open && (
-          <div className="sm:hidden pb-4">
+          <div className="lg:hidden pb-4">
             <div className="flex flex-col gap-3">
-              <a href="#about" className="py-2">About</a>
-              <a href="#portfolio" className="py-2">Work</a>
-              <a href="#services" className="py-2">Services</a>
-              <a href="#contact" className="py-2">Get a Website</a>
+              <a href="#about" className="py-2" onClick={() => setOpen(false)}>About</a>
+              <a href="#services" className="py-2" onClick={() => setOpen(false)}>Services</a>
+              <a href="#portfolio" className="py-2" onClick={() => setOpen(false)}>Work</a>
+              <a href="#testimonials" className="py-2" onClick={() => setOpen(false)}>Reviews</a>
+              <a href="#contact" className="py-2" onClick={() => setOpen(false)}>Get Started</a>
             </div>
           </div>
         )}

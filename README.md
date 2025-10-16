@@ -1,10 +1,10 @@
 # Akibworks - Personal Portfolio Website
 
-A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. Features a vibrant orange theme with dark mode support and showcases web development services for local businesses.
+A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. Features a vibrant blue theme with dark mode support and showcases web development services for local businesses.
 
 ## ✨ Features
 
-- **🎨 Modern Design**: Clean, professional layout with vibrant orange theme
+- **🎨 Modern Design**: Clean, professional layout with vibrant blue theme
 - **🌙 Dark Mode**: Toggle between light and dark themes with sun/moon icons
 - **📱 Fully Responsive**: Works perfectly on desktop, tablet, and mobile
 - **⚡ Fast Performance**: Built with Vite for lightning-fast development and builds

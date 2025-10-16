@@ -6,12 +6,12 @@ $env:BASE_PATH = '/AkibWorks-2/'
 
 # Install dependencies if node_modules doesn't exist
 if (!(Test-Path "node_modules")) {
-    Write-Host "Installing dependencies..." -ForegroundColor Yellow
+    Write-Host "Installing dependencies..." -ForegroundColor Blue
     npm install
 }
 
 # Build the project
-Write-Host "Building project..." -ForegroundColor Yellow
+Write-Host "Building project..." -ForegroundColor Blue
 npm run build
 
 # Check if build was successful
